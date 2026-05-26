@@ -1,0 +1,462 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-image: url(../login/5d03132c44602138bde7c767bb0cd8ba.jpg);
+  background-size: cover;
+  color: white;
+  height: 100dvh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+#account {
+  width: 30%;
+  height: 70%;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+.signup-cont {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  display: none;
+}
+.signup-words {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.signup-words > h1 {
+  text-align: center;
+}
+.signup-words > p {
+  text-align: center;
+}
+.signup-cont > form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#top > input {
+  width: 85%;
+  height: 30px;
+  padding: 10px;
+  border-radius: 12px;
+  font-size: 17px;
+  background-color: rgb(59, 64, 70);
+  color: white;
+  border: none;
+  outline: none;
+}
+#namepass > span > input {
+  width: 85%;
+  height: 30px;
+  padding: 10px;
+  border-radius: 12px;
+  font-size: 17px;
+  background-color: rgb(59, 64, 70);
+  color: white;
+  border: none;
+  outline: none;
+}
+#top {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+#namepass {
+  display: grid;
+  grid-template-columns: 43% 43%;
+  grid-template-rows: 100%;
+  gap: 30px;
+}
+#namepass > span {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.signup-cont > form > button {
+  width: 90%;
+  height: 50px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  color: white;
+  background-color: green;
+  margin-top: 20px;
+}
+.signup-cont > form > button:hover {
+  background-color: rgb(13, 70, 139);
+}
+#login-link {
+  color: white;
+  font-weight: bolder;
+  text-decoration: none;
+}
+#login-link:hover {
+  color: rgb(18, 126, 250);
+}
+.login-cont {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  display: none;
+}
+.login-words {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.login-words > h1 {
+  text-align: center;
+}
+.login-words > p {
+  text-align: center;
+}
+.login-cont > form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.login-cont > form > span {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.login-cont > form > span > input {
+  width: 85%;
+  height: 30px;
+  padding: 10px;
+  border-radius: 12px;
+  font-size: 17px;
+  background-color: rgb(59, 64, 70);
+  color: white;
+  border: none;
+  outline: none;
+}
+.login-cont > form > button {
+  width: 90%;
+  height: 50px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  color: white;
+  background-color: green;
+  margin-top: 20px;
+}
+.login-cont > form > button:hover {
+  background-color: rgb(13, 70, 139);
+}
+#create-link {
+  color: white;
+  font-weight: bolder;
+  text-decoration: none;
+}
+#create-link:hover {
+  color: rgb(18, 126, 250);
+}
+
+#add-details {
+  width: 50%;
+  height: 70%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 30px;
+  padding: 70px;
+  display: none;
+}
+.add {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.add-words {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.add-words > h1 {
+  text-align: center;
+}
+.add-words > p {
+  text-align: center;
+}
+#add-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#profile-pic {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+}
+#pic {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: rgb(59, 64, 70);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: inline-block;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  background-image: url("https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y");
+}
+#image {
+  display: none;
+}
+#profile-pic > button {
+  padding: 12px 20px;
+  border-radius: 12px;
+  border: none;
+  background-color: rgb(18, 126, 250);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s ease;
+}
+#profile-pic > button:hover {
+  background-color: rgb(13, 70, 139);
+}
+#others {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  gap: 20px;
+}
+#others > span {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+#others > span > input {
+  width: 85%;
+  height: 30px;
+  padding: 10px;
+  border-radius: 12px;
+  font-size: 17px;
+  background-color: rgb(59, 64, 70);
+  color: white;
+  border: none;
+  outline: none;
+}
+#others > span > select {
+  width: 90%;
+  height: 50px;
+  padding: 10px;
+  border-radius: 12px;
+  font-size: 17px;
+  background-color: rgb(59, 64, 70);
+  color: white;
+  border: none;
+  outline: none;
+}
+#bio {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+#bio > textarea {
+  width: 95%;
+  height: 100px;
+  padding: 10px;
+  border-radius: 12px;
+  font-size: 17px;
+  background-color: rgb(59, 64, 70);
+  color: white;
+  border: none;
+  outline: none;
+}
+#add-form > button {
+  height: 50px;
+  width: 30%;
+  border-radius: 12px;
+  font-size: 20px;
+  background-color: green;
+  color: white;
+  margin-top: 5px;
+  align-self: flex-end;
+  margin-right: 25px;
+  border: none;
+  outline: none;
+}
+#add-form > button:hover {
+  background-color: rgb(13, 70, 139);
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 16px;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+  #account {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }
+  .signup-cont,
+  .login-cont {
+    padding: 20px;
+    gap: 25px;
+  }
+  #namepass {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  #top > input,
+  #namepass > span > input,
+  .login-cont > form > span > input {
+    width: 93%;
+    font-size: 16px;
+  }
+  .signup-cont > form > button,
+  .login-cont > form > button {
+    width: 100%;
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  #add-details {
+    width: 95% !important;
+    height: auto !important;
+    padding: 25px 15px !important;
+    box-sizing: border-box !important;
+    border-radius: 20px !important;
+    margin: 20px auto !important;
+  }
+
+  .add {
+    gap: 20px !important;
+  }
+
+  #profile-pic {
+    flex-direction: row !important;
+    gap: 15px !important;
+    align-items: center !important;
+    width: 100% !important;
+  }
+
+  #pic {
+    width: 75px !important;
+    height: 75px !important;
+    flex-shrink: 0 !important;
+  }
+
+  #profile-pic > button {
+    padding: 10px 16px !important;
+    font-size: 15px !important;
+  }
+
+  #others {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 15px !important;
+    width: 100% !important;
+  }
+
+  #others > span {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 5px !important;
+  }
+
+  #others > span > input,
+  #others > span > select,
+  #bio > textarea {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  #others > span > input,
+  #others > span > select {
+    height: 45px !important;
+  }
+
+  #bio {
+    width: 100% !important;
+    margin-top: 5px !important;
+  }
+
+  #bio > textarea {
+    height: 90px !important;
+  }
+
+  #add-form > button {
+    width: 100% !important;
+    height: 48px !important;
+    align-self: center !important;
+    margin: 15px 0 0 0 !important;
+    font-size: 18px !important;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  body {
+    font-size: 18px;
+  }
+  #account {
+    width: 65%;
+    height: auto;
+    border-radius: 25px;
+  }
+  .signup-cont,
+  .login-cont {
+    padding: 25px;
+    gap: 35px;
+  }
+  #namepass {
+    grid-template-columns: 44% 44%;
+    gap: 8%;
+  }
+  #top > input,
+  #namepass > span > input,
+  .login-cont > form > span > input {
+    width: 93%;
+  }
+  .signup-cont > form > button {
+    width: 97%;
+  }
+  .login-cont > form > button {
+    width: 100%;
+  }
+  #add-details {
+    width: 85%;
+    height: auto;
+    padding: 40px;
+    box-sizing: border-box;
+  }
+  #others {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  #others > span > input,
+  #others > span > select {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  #bio > textarea {
+    width: 70%;
+  }
+  #add-form > button {
+    width: 40%;
+    margin-right: 0;
+  }
+}
